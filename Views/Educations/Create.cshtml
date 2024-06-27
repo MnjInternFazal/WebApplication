@@ -1,0 +1,249 @@
+﻿@model WebApplication1.Models.Education
+
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+    body {
+        background: linear-gradient(135deg, #ff9999, #ffcc99, #ffff99, #ccff99, #99ffcc);
+        background-repeat: no-repeat;
+    }
+
+    .btn-primary {
+        background: linear-gradient(to right, #2980b9, #6dd5fa);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+
+    p a {
+        margin-left: 900px;
+    }
+
+    .container {
+        width: 100%; /* Set the width to 100% to fill the entire page horizontally */
+        max-width: 1300px;
+        margin: auto;
+        margin-right: 50px;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #f8f9fa;
+    }
+
+    h3 {
+        color: blue;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+        margin-left: auto;
+    }
+
+    h1 {
+        margin: 0 auto;
+        font-size: 40px;
+        color: blue;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+    /* Adjust size of control label */
+    .control-label {
+        width: 250px; /* Set the wih of the labels */
+        margin-right: 10px; /* Adjust margin between label and input */
+        font-size: 20px; /* Adjust font size of the labels */
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+    /* Add space between label and input */
+    .form-control {
+        margin-left: 50px; /* Adjust margin between label and input */
+        width: 800px;
+    }
+
+    .input-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+        .input-row .control-label {
+            width: 150px; /* Adjust label width as needed */
+            margin-right: 40px; /* Adjust margin between label and input */
+        }
+</style>
+<div class="header">
+    <h1>Application Form</h1>
+    <img src="~/image/logo.png" style="height:80px; width:90px;" class="logo" />
+
+</div>
+<br />
+<hr />
+<p>
+    <a asp-action="Index" class="btn btn-primary float-right">Edit</a>
+</p>
+<div class="container">
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <h4 id="educationTypeHeader">Education Details - 10th</h4>
+
+        <div class="form-group">
+            <label asp-for="PersonalId" class="control-label"></label>
+            <select asp-for="PersonalId" class="form-control" asp-items="ViewBag.PersonalId"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="EducationType" class="control-label"></label>
+            <select asp-for="EducationType" class="form-control" id="educationType" required>
+                <option value="">Select</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Postgraduation">Postgraduation</option>
+            </select>
+            <span asp-validation-for="EducationType" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="InstituteType" class="control-label"> Institute Name</label>
+            <input asp-for="InstituteType" class="form-control" />
+            <span asp-validation-for="InstituteType" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="YOP" class="control-label"></label>
+            <input asp-for="YOP" class="form-control" />
+            <span asp-validation-for="YOP" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Program" class="control-label"></label>
+            <input asp-for="Program" class="form-control" />
+            <span asp-validation-for="Program" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Elective" class="control-label"></label>
+            <input asp-for="Elective" class="form-control" />
+            <span asp-validation-for="Elective" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ClgName" class="control-label"></label>
+            <input asp-for="ClgName" class="form-control" />
+            <span asp-validation-for="ClgName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="BoardName" class="control-label"></label>
+            <input asp-for="BoardName" class="form-control" />
+            <span asp-validation-for="BoardName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CourseDurationFrom" class="control-label"></label>
+            <input asp-for="CourseDurationFrom" class="form-control" type="date" />
+            <span asp-validation-for="CourseDurationFrom" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CourseDurationTo" class="control-label"></label>
+            <input asp-for="CourseDurationTo" class="form-control" type="date" />
+            <span asp-validation-for="CourseDurationTo" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ScoreType" class="control-label"></label>
+            <input asp-for="ScoreType" type="radio" value="CGPA" id="cgpaRadio" onclick="showCGPASection()" /> CGPA
+            <input asp-for="ScoreType" type="radio" value="Percentage" id="marksRadio" onclick="showMarksSection()" /> Marks
+            <span asp-validation-for="ScoreType" class="text-danger"></span>
+        </div>
+        <div id="cgpaSection" class="form-group" style="display: none;">
+            <div class="input-row">
+                <label asp-for="CGPAValue" class="control-label">CGPA Value</label>
+                <input asp-for="CGPAValue" class="form-control" />
+            </div>
+            <div class="input-row">
+                <label asp-for="CGPAScale" class="control-label">CGPA Scale</label>
+                <input asp-for="CGPAScale" class="form-control" />
+            </div>
+            <div class="input-row">
+                <label asp-for="CGPAPercentage" class="control-label">Percentage</label>
+                <input asp-for="CGPAPercentage" class="form-control" />
+            </div>
+        </div>
+
+        <div id="marksSection" class="form-group" style="display: none;">
+            <div class="input-row">
+                <label asp-for="TotalMarks" class="control-label">Total Marks</label>
+                <input asp-for="TotalMarks" class="form-control" /><br />
+            </div>
+            <div class="input-row">
+                <label asp-for="MaxMarks" class="control-label">Maximum Marks</label>
+                <input asp-for="MaxMarks" class="form-control" /><br />
+            </div>
+            <div class="input-row">
+                <label asp-for="MarkPercentage" class="control-label">Percentage</label>
+                <input asp-for="MarkPercentage" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("Create", "Families")'">Back </button>
+            <button type="submit" class="btn btn-primary">Save </button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("Create", "AddQualifications")'">Next </button>
+
+        </div>
+    </form>
+</div>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        function updateEducationTypeHeader() {
+            var selectedEducationType = document.getElementById("educationType").value;
+            document.getElementById("educationTypeHeader").innerText = "Education Details - " + selectedEducationType;
+        }
+
+        // Event listener for education type dropdown change
+        document.getElementById("educationType").addEventListener("change", updateEducationTypeHeader);
+        function showCGPASection() {
+            document.getElementById("cgpaSection").style.display = "block";
+            document.getElementById("marksSection").style.display = "none";
+        }
+
+        function showMarksSection() {
+            document.getElementById("cgpaSection").style.display = "none";
+            document.getElementById("marksSection").style.display = "block";
+        }
+    </script>
+}
+

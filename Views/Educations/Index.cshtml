@@ -1,0 +1,131 @@
+﻿@model IEnumerable<WebApplication1.Models.Education>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EducationType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InstituteType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YOP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Program)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Elective)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClgName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BoardName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseDurationFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseDurationTo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScoreType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CGPAValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CGPAScale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CGPAPercentage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalMarks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaxMarks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MarkPercentage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Personal)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EducationType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstituteType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YOP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Program)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Elective)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClgName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoardName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseDurationFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseDurationTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ScoreType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CGPAValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CGPAScale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CGPAPercentage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalMarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaxMarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarkPercentage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Personal.PersonalId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EducationId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EducationId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EducationId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

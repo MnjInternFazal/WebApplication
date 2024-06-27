@@ -1,0 +1,120 @@
+﻿@model WebApplication1.Models.Education
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Education</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EducationType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EducationType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InstituteType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InstituteType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.YOP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.YOP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Program)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Program)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Elective)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Elective)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ClgName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ClgName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BoardName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BoardName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseDurationFrom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CourseDurationFrom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseDurationTo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CourseDurationTo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ScoreType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ScoreType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CGPAValue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CGPAValue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CGPAScale)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CGPAScale)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CGPAPercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CGPAPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalMarks)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalMarks)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaxMarks)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaxMarks)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MarkPercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MarkPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Personal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Personal.PersonalId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.EducationId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,64 @@
+﻿@model WebApplication1.Models.Passport
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Passport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PassportId" />
+            <div class="form-group">
+                <label asp-for="PersonalId" class="control-label"></label>
+                <select asp-for="PersonalId" class="form-control" asp-items="ViewBag.PersonalId"></select>
+                <span asp-validation-for="PersonalId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number" class="control-label"></label>
+                <input asp-for="Number" class="form-control" />
+                <span asp-validation-for="Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfIssue" class="control-label"></label>
+                <input asp-for="DateOfIssue" class="form-control" />
+                <span asp-validation-for="DateOfIssue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfExpiry" class="control-label"></label>
+                <input asp-for="DateOfExpiry" class="form-control" />
+                <span asp-validation-for="DateOfExpiry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HasValidVisa" class="control-label"></label>
+                <input asp-for="HasValidVisa" class="form-control" />
+                <span asp-validation-for="HasValidVisa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsOpenToTravel" class="control-label"></label>
+                <input asp-for="IsOpenToTravel" class="form-control" />
+                <span asp-validation-for="IsOpenToTravel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

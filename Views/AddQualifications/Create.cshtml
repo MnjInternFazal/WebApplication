@@ -1,0 +1,78 @@
+﻿@model WebApplication1.Models.AddQualification
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<link href="~/css/stylesheet1.css" rel="stylesheet" />
+<div class="header">
+    <h1>Application Form</h1>
+    <img src="~/image/logo.png" style="height:80px; width:90px;" class="logo" />
+
+</div>
+<div class="container">
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <table class="table">
+            <h4>Additional Qualification</h4>
+            <thead>
+                <tr>
+                    <th><label asp-for="PersonalId" class="control-label"></label></th>
+                    <th><label asp-for="Program" class="control-label"></label></th>
+                    <th><label asp-for="Institute" class="control-label"></label></th>
+                    <th><label asp-for="FromDate" class="control-label"></label></th>
+                    <th><label asp-for="ToDate" class="control-label"></label></th>
+                    <th><label asp-for="Percentage" class="control-label"></label></th>
+                    <th><label asp-for="Division" class="control-label"></label></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="FamilyTable">
+                <!-- Initial row -->
+                <tr>
+                    <td>
+                        <select asp-for="PersonalId" class="form-control" asp-items="ViewBag.PersonalId"></select>
+                    </td>
+                    <td>
+                        <input asp-for="Program" class="form-control" />
+                    </td>
+                    <td>
+                        <input asp-for="Institute" class="form-control" />
+                    </td>
+                    <td>
+                        <input asp-for="FromDate" class="form-control" type="date" />
+                    </td>
+                    <td>
+                        <input asp-for="ToDate" class="form-control" type="date" />
+                    </td>
+                    <td>
+                        <input asp-for="Percentage" class="form-control"  />
+                    </td>
+                    <td>
+                        <input asp-for="Division" class="form-control"  />
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger" onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" onclick="addRow()">Add Row</button>
+        <br /><br /><hr />
+        <div class="form-group">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("Create", "Educations")'">Back </button>
+            <button type="submit" class="btn btn-primary">Save </button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("Create", "Seminars")'">Next </button>
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

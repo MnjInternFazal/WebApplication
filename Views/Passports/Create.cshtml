@@ -1,0 +1,126 @@
+﻿@model WebApplication1.Models.Passport
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<link href="~/css/stylesheet1.css" rel="stylesheet" />
+<div class="header">
+    <h1>Application Form</h1>
+    <img src="~/image/logo.png" style="height:80pxn ; width:90px;" class="logo" />
+
+</div>
+<br />
+<hr />
+<p>
+    <a asp-action="Index" class="btn btn-primary float-right">Edit</a>
+</p>
+<div class="container">
+    <form asp-action="Create" method="post" id="passportForm">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <label>
+            <input asp-for="Status" type="radio" value="Available"> Available
+        </label>
+        <label>
+            <input asp-for="Status" type="radio" value="NotAvailable"> Not Available
+        </label>
+        <label>
+            <input asp-for="Status" type="radio" value="Applied"> Applied
+        </label><br /><br /><br />
+        <div class="row" id="formFields">
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label asp-for="PersonalId" class="control-label"></label>
+                    <select asp-for="PersonalId" class="form-control" asp-items="ViewBag.PersonalId"></select>
+                </div>
+               
+
+                <div class="form-group">
+                    <label asp-for="Number" class="control-label"></label>
+                    <input asp-for="Number" class="form-control" />
+                    <span asp-validation-for="Number" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateOfIssue" class="control-label"></label>
+                    <input asp-for="DateOfIssue" class="form-control" type="date" />
+                    <span asp-validation-for="DateOfIssue" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateOfExpiry" class="control-label"></label>
+                    <input asp-for="DateOfExpiry" class="form-control" type="date" />
+                    <span asp-validation-for="DateOfExpiry" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Do you have valid VISA? If yes, Please mention the type of Visa</label>
+                    <div>
+                        <label>
+                            <input type="radio" asp-for="HasValidVisa" value="True" />
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" asp-for="HasValidVisa" value="False" />
+                            No
+                        </label>
+                    </div>
+                    <span asp-validation-for="HasValidVisa" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Are you open to TRavel to the USA/Sr</label>
+                    <div>
+                        <label>
+                            <input type="radio" asp-for="IsOpenToTravel" value="True" />
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" asp-for="IsOpenToTravel" value="False" />
+                            No
+                        </label>
+                    </div>
+                    <span asp-validation-for="IsOpenToTravel" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("Create", "Addresses")'">Back </button>
+            <button type="submit" class="btn btn-primary" onclick="window.location.href='@Url.Action("Create", "Languages")'">Next </button>
+        </div>
+
+    </form>
+
+
+
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var radioButtons = document.querySelectorAll('input[name="Passport"]');
+            var formFields = document.getElementById("formFields");
+
+            function toggleFormVisibility() {
+                if (this.value === "Not Available" || this.value === "Applied") {
+                    formFields.style.display = "none"; // Hide the form fields
+                } else {
+                    formFields.style.display = "block"; // Show the form fields
+                }
+            }
+
+            radioButtons.forEach(function (radioButton) {
+                radioButton.addEventListener('change', toggleFormVisibility);
+            });
+
+            toggleFormVisibility.call(document.querySelector('input[name="Passport"]:checked'));
+        });
+    </script>
+
+}
