@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|c:\\users\\fazalw\\source\\repos\\webapplicationapi\\webapplicationapi\\controllers\\educationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|solutionrelative:webapplicationapi\\controllers\\educationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|c:\\users\\fazalw\\source\\repos\\webapplicationapi\\webapplicationapi\\models\\education.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|solutionrelative:webapplicationapi\\models\\education.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|c:\\users\\fazalw\\source\\repos\\webapplicationapi\\webapplicationapi\\models\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|solutionrelative:webapplicationapi\\models\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|c:\\users\\fazalw\\source\\repos\\webapplicationapi\\webapplicationapi\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|solutionrelative:webapplicationapi\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|c:\\users\\fazalw\\source\\repos\\webapplicationapi\\webapplicationapi\\controllers\\addqualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|solutionrelative:webapplicationapi\\controllers\\addqualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|c:\\users\\fazalw\\source\\repos\\webapplicationapi\\webapplicationapi\\controllers\\personaldetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24F79ECC-047D-442E-91EB-E0365FE64780}|WebApplicationApi\\WebApplicationApi.csproj|solutionrelative:webapplicationapi\\controllers\\personaldetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Models\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "WebApplicationApi\\Models\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Models\\ApplicationContext.cs",
+              "RelativeToolTip": "WebApplicationApi\\Models\\ApplicationContext.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T18:53:32.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Education.cs",
+              "DocumentMoniker": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Models\\Education.cs",
+              "RelativeDocumentMoniker": "WebApplicationApi\\Models\\Education.cs",
+              "ToolTip": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Models\\Education.cs",
+              "RelativeToolTip": "WebApplicationApi\\Models\\Education.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T18:27:04.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EducationsController.cs",
+              "DocumentMoniker": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\EducationsController.cs",
+              "RelativeDocumentMoniker": "WebApplicationApi\\Controllers\\EducationsController.cs",
+              "ToolTip": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\EducationsController.cs",
+              "RelativeToolTip": "WebApplicationApi\\Controllers\\EducationsController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAqwBgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T18:20:29.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddQualificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\AddQualificationsController.cs",
+              "RelativeDocumentMoniker": "WebApplicationApi\\Controllers\\AddQualificationsController.cs",
+              "ToolTip": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\AddQualificationsController.cs",
+              "RelativeToolTip": "WebApplicationApi\\Controllers\\AddQualificationsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:04:21.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddressesController.cs",
+              "DocumentMoniker": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\AddressesController.cs",
+              "RelativeDocumentMoniker": "WebApplicationApi\\Controllers\\AddressesController.cs",
+              "ToolTip": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\AddressesController.cs",
+              "RelativeToolTip": "WebApplicationApi\\Controllers\\AddressesController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAADwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T14:35:23.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonalDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\PersonalDetailController.cs",
+              "RelativeDocumentMoniker": "WebApplicationApi\\Controllers\\PersonalDetailController.cs",
+              "ToolTip": "C:\\Users\\FAZALW\\source\\repos\\WebApplicationApi\\WebApplicationApi\\Controllers\\PersonalDetailController.cs",
+              "RelativeToolTip": "WebApplicationApi\\Controllers\\PersonalDetailController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAEUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T08:54:26.032Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
